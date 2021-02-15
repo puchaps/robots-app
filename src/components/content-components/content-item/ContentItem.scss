@@ -1,0 +1,57 @@
+.content-item {
+  animation: animShow ease-in 0.3s;
+  width: 30%;
+  padding: 30px 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: all 0.5s;
+  
+  &:hover {
+    box-shadow: 0 1px 10px rgb(0, 0, 0);
+
+    .content-item-image {
+      img {
+        transition: all 0.5s;
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .content-item-image {
+    width: 200px;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .content-item-descriptions {
+    text-align: center;
+    margin-top: 20px;
+
+    .name {
+      text-transform: uppercase;
+    }
+  }
+
+  .content-item-button {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+}
+
+@keyframes animShow {
+  0%{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

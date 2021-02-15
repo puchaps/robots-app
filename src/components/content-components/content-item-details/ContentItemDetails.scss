@@ -1,0 +1,65 @@
+.content-details {
+  width: 20%;
+  margin:  0 auto;
+  margin-top: 50px;
+  animation: animShowDetails ease-in 0.3s;
+
+  .content-details-img {
+    width: 200px;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 100%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      transform: scale(1.1);
+     
+    }
+  }
+
+  .content-details-descriptions {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.7;
+
+    .name-email-phone {
+      display: flex;
+      flex-direction: column;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+      padding-bottom: 5px;
+      line-height: 1.5;
+    }
+
+    .address-company {
+      margin-top: 10px;
+      line-height: 1.5;
+     
+      .address, .company {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        padding-bottom: 5px;  
+      }
+
+      .company {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+@keyframes animShowDetails{
+  0%{
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}

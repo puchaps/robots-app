@@ -1,0 +1,26 @@
+.about {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+  animation: animShowAbout 0.3s ease-in;
+
+  h1 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+  }
+
+  .about-text {
+    line-height: 1.5;
+    margin-top: 20px;
+  }
+}
+
+@keyframes animShowAbout {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
