@@ -45,3 +45,35 @@ header {
   }
 }
 
+@media screen and(max-width: 1440px) {
+  header {
+    .header {
+      .header-logo {
+        img {
+          width: 45px;
+        }
+      }
+
+      .header-links {
+        width: 110px;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 768px) {
+  header {
+    .header {
+      .header-logo {
+        img {
+          width: 40px;
+        }
+      }
+
+      .header-links {
+        width: 100px;
+        font-size: 13px;
+      }
+    }
+  }
+}

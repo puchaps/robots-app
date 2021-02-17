@@ -24,3 +24,15 @@
     transform: scale(1);
   }
 }
+
+@media screen and(max-width: 768px) {
+  .about {
+    width: 60%;
+  }
+}
+
+@media screen and(max-width: 425px) {
+  .about {
+    width: 75%;
+  }
+}

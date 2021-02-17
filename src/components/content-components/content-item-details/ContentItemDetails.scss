@@ -1,8 +1,11 @@
 .content-details {
   width: 20%;
-  margin:  0 auto;
+  margin: 0 auto;
   margin-top: 50px;
   animation: animShowDetails ease-in 0.3s;
+  box-shadow: 0 1px 5px black;
+  border-radius: 10px;
+  padding: 10px;
 
   .content-details-img {
     width: 200px;
@@ -15,7 +18,6 @@
     img {
       width: 100%;
       transform: scale(1.1);
-     
     }
   }
 
@@ -38,12 +40,13 @@
     .address-company {
       margin-top: 10px;
       line-height: 1.5;
-     
-      .address, .company {
+
+      .address,
+      .company {
         display: flex;
         flex-direction: column;
         border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-        padding-bottom: 5px;  
+        padding-bottom: 5px;
       }
 
       .company {
@@ -53,13 +56,63 @@
   }
 }
 
-@keyframes animShowDetails{
-  0%{
+@keyframes animShowDetails {
+  0% {
     opacity: 0;
     transform: scale(0.8);
   }
-  100%{
+  100% {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@media screen and(max-width: 1440px) {
+  .content-details {
+    width: 23%;
+
+    .content-details-img {
+      width: 150px;
+    }
+  }
+}
+
+@media screen and(max-width: 1024px) {
+  .content-details {
+    width: 30%;
+  }
+}
+
+@media screen and(max-width: 768px) {
+  .content-details {
+    width: 40%;
+
+    .content-details-img {
+      width: 120px;
+    }
+
+    .content-details-descriptions {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and(max-width: 530px) {
+  .content-details {
+    width: 55%;
+  }
+}
+
+@media screen and(max-width: 425px) {
+  .content-details {
+    width: 60%;
+
+    .content-details-img {
+      width: 100px;
+    }
+
+    .content-details-descriptions {
+      font-size: 13px;
+    }
   }
 }
